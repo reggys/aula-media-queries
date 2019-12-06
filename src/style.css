@@ -5,9 +5,34 @@
     --mobile: 320px;
 }
 
+body,
+h1 {
+    margin: 0;
+}
 .container {
     background-color: red;
     width: var(--desktop);
     color: white;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: var(--tablet);
+        background-color: blue;
+        }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--tablet);
+            background-color: green;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: var(--tablet);
+            background-color: purple;
+    }
 }
